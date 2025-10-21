@@ -23,7 +23,7 @@ int main(int argc, char* argv[]){
                 std::cout << summ << ",  " << prod << std::endl;
         } else{
                 unsigned int number;
-                std::cout << "Input number: ";
+               // std::cout << "Input number: ";
                 std::cin >> number;
 
                 unsigned int summ = 0;

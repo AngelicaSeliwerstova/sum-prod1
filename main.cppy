@@ -1,0 +1,29 @@
+#include <iostream>
+int main(int argc, char* argv[]){
+	unsigned int sum=0;
+        unsigned int prod=1U;
+	if (argc>1){
+	char *number=argv[1];
+	int index=0;
+	while number(number[index]!='\0'){
+	if (number[index]>='0' && <='9'){
+	sum+=number[index];
+	prod*=number[index];
+}
+	else{std::cout<<"wrong number'"<<argv[i]<<"'"<<std::endl;}
+}
+	std::cout<<sum<<", "<<prod<<std::endl;
+}
+	unsigned int number;
+	std::cout<<"Input number";
+	std::cin>>number;
+	unsigned int sum=0;
+	unsigned int prod=1U;
+	do{
+	sum+= number%10;
+	prod*=number%10;
+	number/=10;	
+	}while(number!=0);
+	std::cout<<sum<<", "<<prod<<std::endl;
+	return 0;
+}
